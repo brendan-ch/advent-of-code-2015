@@ -8,10 +8,10 @@ fn main() {
 
     for line in input.lines() {
         // vectors slow, arrays fast
-        let mut d = [0, 0, 0];
+        let mut d: [u32; 3] = [0, 0, 0];
         let mut next = 0;
         for i in line.split('x') {
-            d[next] = i.parse::<i32>().expect("Unknown input");
+            d[next] = i.parse::<u32>().expect("Unknown input");
             next += 1;
         }
 
