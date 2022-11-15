@@ -22,5 +22,5 @@ fn main() {
     println!("{sum}");
 
     let elapsed = now.elapsed().as_micros();
-    println!("Time elapsed: {elapsed}");
+    println!("Time elapsed: {elapsed} microseconds");
 }
