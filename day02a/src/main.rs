@@ -7,11 +7,10 @@ fn main() {
     let mut sum = 0;
 
     for line in input.lines() {
-        let iter = line.split('x');
         // vectors slow, arrays fast
         let mut d = [0, 0, 0];
         let mut next = 0;
-        for i in iter {
+        for i in line.split('x') {
             d[next] = i.parse::<i32>().expect("Unknown input");
             next += 1;
         }
