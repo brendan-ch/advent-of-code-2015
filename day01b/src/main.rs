@@ -1,4 +1,8 @@
+use std::time::Instant;
+
 fn main() {
+    let now = Instant::now();
+
     let input = include_str!("../input.txt");
     let mut floor = 0;
     let mut index = 1;
@@ -17,4 +21,6 @@ fn main() {
         index += 1;
     }
 
+    let elapsed = now.elapsed().as_micros();
+    println!("Time elapsed: {elapsed} microseconds");
 }
