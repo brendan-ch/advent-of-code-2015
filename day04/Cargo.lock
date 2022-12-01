@@ -3,7 +3,7 @@
 version = 3
 
 [[package]]
-name = "day04b"
+name = "day04"
 version = "0.1.0"
 dependencies = [
  "md5",
